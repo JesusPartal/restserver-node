@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.use(require('./routes/usuario'));
 
-
+//Mongoose connection
 mongoose.connect('mongodb://jpc:Celiapv_23!@ds063879.mlab.com:63879/cafe-jpc', { useNewUrlParser: true }, (err, res) => {
     if (err) throw err;
     console.log('Base de datos ONLINE');
